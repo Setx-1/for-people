@@ -488,3 +488,28 @@
         max-height: 80%;
       }
   }
+  @media (max-width: 375px){
+    .info_name {
+        height: 75px;
+        margin-left: 10px;
+    }
+    .promo img {
+        width: 40px;
+        height: 40px;
+    }
+    .promo_text {
+        font-size: 8px;
+    }
+    .promo_text {
+    font-size: 8px;
+    }
+    .slider{
+        display: none;
+    }
+    .info_adress {
+        display: none;
+    }
+    .info_mail a {
+        height: 75px;
+    }
+  }

@@ -644,7 +644,7 @@ a:visited {
 }
 .slider {
   position: relative;
-  padding: 0px 60px;
+  
 }
 .slider .slick-slide {
   display: flex;
