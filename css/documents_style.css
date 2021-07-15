@@ -1,0 +1,181 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+.wrapper {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background-color: #000;
+  border-bottom: 5px solid #ff8a00;
+  margin-bottom: 30px;
+  position: relative;
+}
+.nav-logo {
+  position: absolute;
+  left: 5%;
+}
+nav ul li a {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  color: #ff8a00;
+  transition: ease 0.5s;
+}
+nav li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info_underline {
+  background-color: black;
+  width: 20px;
+  height: 2px;
+  transition: ease 1s;
+}
+nav li:hover .info_underline {
+  width: 80px;
+  height: 2px;
+  background-color: #ff8a00;
+  transition: ease 0.5s;
+}
+
+nav ul li a .info_underline {
+  width: 20px;
+  height: 2px;
+  background-color: white;
+  transition: ease 1s;
+}
+
+/* h1 */
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 90%;
+}
+
+/* buttons */
+
+.button_row {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+.button,
+.button:visited {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+  height: 65px;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: #ff8a00;
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+  transition: all 0.3s;
+}
+.button:active {
+  transform: scale(0.9);
+  transition: all 0.3s;
+}
+.button:last-child {
+  margin: 0;
+}
+
+/* first section */
+
+main p {
+  margin: 0 auto;
+  max-width: 80%;
+  margin-bottom: 30px;
+}
+main p:before {
+  content: "";
+  margin-right: 30px;
+}
+
+/* second section */
+
+h2 {
+  padding: 20px 25px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.instruction_content {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.instruction_card {
+  display: flex;
+  flex-direction: column;
+}
+.card1 {
+  margin-right: 20px;
+}
+.card2_img {
+  max-width: 700px;
+  min-height: 60%;
+  margin-bottom: 20px;
+  background: url("../img/cmr_new.jpg") 0 0 no-repeat;
+  background-size: 100% auto;
+}
+.card2-button {
+  width: 250px;
+  display: none;
+  font-size: 18px;
+  padding: 10px;
+  align-self: center;
+}
+.point {
+  max-width: 700px;
+  list-style: none;
+  margin-bottom: 20px;
+  padding: 5px 30px;
+  border-bottom: 4px solid #ff8a00;
+  border-radius: 7px;
+}
+.point span {
+  font-weight: 700;
+}
+.text_link {
+  text-decoration: none;
+}

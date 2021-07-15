@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/media_documents.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="post2">
+      <!-- style display:none -->
+      <h2>Оставьте заявку</h2>
+      <form action="https://formspree.io/f/mpzklkbp" method="POST">
+        <div class="form_columns">
+          <div class="form_column column1">
+            <!-- <label class="label var" title="Лицо, ответственное за финансовое урегулирование">
+        Плательщик <input class="input border"  name="payer" type="text" placeholder='ООО "Белый Медведь"' autocomplete="off"  required="required">
+      </label> -->
+
+            <label
+              class="label var required"
+              title="Электронная почта поможет Вам получать уведомления о ходе исполнения заявки"
+            >
+              E-mail<input
+                class="input border"
+                name="mail"
+                type="email"
+                placeholder="email@mail.ru"
+                autocomplete="off"
+                required="required"
+              />
+            </label>
+
+            <label
+              class="label var required"
+              title="Контактный телефон по которому можно будет связаться в случае необходимости"
+            >
+              Телефон<input
+                class="input border"
+                name="phone"
+                type="tel"
+                placeholder="+375 33 99 99"
+                autocomplete="off"
+                required="required"
+              />
+            </label>
+
+            <label
+              class="label var required"
+              title="Представитель плательщика, уполномоченный решать вопросы оплаты"
+            >
+              Контактное лицо<input
+                class="input border"
+                name="contact_person"
+                type="text"
+                placeholder="Петров Петр Петрович"
+                autocomplete="off"
+                required="required"
+              />
+            </label>
+
+            <label
+              class="label var required"
+              title="Выберите из списка или введите свой"
+            >
+              Наименование груза<input
+                class="input border"
+                name="name_gruz"
+                type="text"
+                placeholder="Картон"
+                autocomplete="off"
+                required="required"
+              />
+            </label>
+
+            <label
+              class="check option"
+              title="Груз, состоящий из стандартных погрузочных мест"
+            >
+              <input
+                type="checkbox"
+                class="check__input"
+                name="rossyp"
+                checked=""
+              />
+              <span class="checkbox"></span> россыпь</label
+            >
+            <label
+              class="check option"
+              title="Груз, один их параметров которого превышает 6000 мм, либо сумма трех измерений превышает 4400 мм"
+            >
+              <input type="checkbox" class="check__input" name="negabarit" />
+              <span class="checkbox"></span> негабарит</label
+            >
+            <label
+              class="check option"
+              title="Груз, требующий особых условий упаковки или дополнительного страхования"
+            >
+              <input type="checkbox" class="check__input" name="khrupkiy" />
+              <span class="checkbox"></span> хрупкий</label
+            >
+            <label
+              class="check option"
+              title="Груз, упакованный на деревянные поддоны"
+            >
+              <input type="checkbox" class="check__input" name="pallet" />
+              <span class="checkbox"></span> паллет</label
+            >
+            <label
+              class="check option"
+              title="Груз, масса одного места которого превышает 200 кг"
+            >
+              <input type="checkbox" class="check__input" name="tyazheloves" />
+              <span class="checkbox"></span> тяжеловес</label
+            >
+            <label
+              class="check option"
+              title="Груз, требующий особых условий доставки (ДОПОГ, ADR)"
+            >
+              <input type="checkbox" class="check__input" name="opasnyy" />
+              <span class="checkbox"></span> опасный</label
+            >
+
+            <label class="label var" title="Введите количество погрузочных мест"
+              >Мест
+              <input
+                class="input border"
+                type="number"
+                name="mest"
+                placeholder="2"
+            /></label>
+
+            <label class="label var" title="Введите общую массу груза">
+              Вес,кг<input
+                class="input border"
+                type="number"
+                name="ves"
+                placeholder="22"
+              />
+            </label>
+
+            <label class="label var" title="Введите общий объем груза">
+              Объем,м3<input
+                class="input border"
+                type="number"
+                name="volume"
+                placeholder="0.32"
+              />
+            </label>
+          </div>
+          <div class="form_column column2">
+            <!-- <label class="label var" title="Введите наименование Грузоотправителя">
+        Отправитель <input class="input border"  name="sender" type="text" placeholder='ООО "Белый Медведь"' autocomplete="off" required="required">
+      </label>
+      <label class="check option" class="check option" for="sender_payer" title="При выборе данного пункта данные Плательщика автоматически заполняются в поля Грузоотправителя">
+        <input  type="checkbox" class='check__input' name="sender_payer"><span class="checkbox"></span>заполнить по плательщику
+      </label> -->
+
+            <label
+              class="label var required"
+              title="Регион или населенный пункт фактического местонахождения Грузоотправителя"
+            >
+              Пункт отправления
+              <input
+                class="input border"
+                type="text"
+                name="punkt_otpravleniya"
+                placeholder="Челябинск"
+                autocomplete="off"
+                required="required"
+              />
+            </label>
+
+            <!-- <label class="check option" title="Выбор данного пункта означает заказ услуги автоподбора груза у Грузоотправителя по указанному адресу">
+        <input type="checkbox" class='check__input' name="zabrat_u_otpravitelya"><span class="checkbox"></span>забрать у отправителя 
+      </label>
+      <label class="label var" title="Укажите адрес автоподбора груза">
+        Адрес подачи автомобиля<input class="input border"  type="text" name="adres_podachi_avtomobilya" autocomplete="off" required="required" disabled="disabled">
+      </label>
+      
+      <label class="label var" title="Контактный телефон Грузоотправителя">
+        Телефон<input class="input border" type="tel" name="tel_from" placeholder="+375 29 777 77 77" autocomplete="off" required="required">
+      </label>
+      
+      <label class="label var" title="Лицо, ответственное за отправку груза">
+        Контактное лицо <input class="input border" type="text" name="cont_from" placeholder="Петров Петр Петрович" autocomplete="off" required="required">
+      </label>
+                       
+ <div class="info_aster">
+<p><span>*</span> - Поля обязательные к заполнению</p>
+</div> -->
+          </div>
+          <div class="form_column column3">
+            <!-- <label class="label var" title="Введите наименование Грузополучателя">
+        Получатель<input class="input border" name="poluchatel" type="text" placeholder='ООО "Московский Медведь"' autocomplete="off" required="required">
+      </label>
+      
+      
+      <label class="check option" title="При выборе данного пункта данные Плательщика автоматически заполняются в поля Грузополучателя">
+        <input type="checkbox" class='check__input' name="poluchatel_payer"><span class="checkbox"></span>заполнить по плательщику
+      </label> -->
+
+            <label
+              class="label var required"
+              title="Регион или населенный пункт фактического местонахождения Грузополучателя"
+            >
+              Пункт назначения
+              <input
+                class="input border"
+                type="text"
+                name="punkt_naznacheniya"
+                placeholder="Москва"
+                autocomplete="off"
+                required="required"
+              />
+            </label>
+
+            <!-- <label class="check option" title="Выбор данного пункта означает заказ услуги доставки груза до Грузополучателя по указанному адресу">
+        <input type="checkbox" class='check__input' name="dostavit_do_dveri_poluchatelya"><span class="checkbox"></span>доставить до двери получателя
+      </label>
+      <label class="label var" title="Укажите адрес доставки груза">Адрес доставки 
+        <input class="input border" type="text" name="adres_dostavki" disabled="disabled" autocomplete="off" required="required">
+      </label>
+      
+      <label class="label var" title="Контактный телефон Грузополучателя">
+        Телефон<input class="input border" type="tel" name="tel_to" placeholder="+375 17 777 77 77" autocomplete="off" required="required"> 
+      </label>
+      
+      <label class="label var" title="Лицо, ответственное за прием груза">Контактное лицо
+        <input class="input border"  type="text" name="cont_to" placeholder="Иванов Иван Иванович" autocomplete="off" required="required"> 
+      </label> -->
+          </div>
+          <div class="form_column column4">
+            <label
+              class="label var"
+              title="Номер счета отправителя, особые условия, режим работы, условия проезда и прочая информация об отправке"
+            >
+              Дополнительная информация<textarea
+                maxlength="255"
+                name="add_info"
+                placeholder="Счет № ОПТ-00004587 от 05.02.2015, въезд на территорию платный 100 руб., требуется жесткая упаковка"
+                spellcheck="true"
+              ></textarea>
+            </label>
+
+            <label class="label var required" title="Дата загрузки">
+              Дата загрузки
+              <input
+                class="input border"
+                type="date"
+                name="data_zagruzki"
+                required="required"
+              />
+            </label>
+
+            <label class="label var" title="Время загрузки">
+              Время загрузки<input
+                class="input border"
+                type="time"
+                name="time_zagruzki"
+              />
+            </label>
+
+            <label class="label var required" title="Дата разгрузки">
+              Дата разгрузки<input
+                class="input border"
+                type="date"
+                name="data_razgruzki"
+                required="required"
+              />
+            </label>
+
+            <label class="label var" title="Время разгрузки">
+              Время разгрузки<input
+                class="input border"
+                type="time"
+                name="time_razgruzki"
+              />
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="form__send">Отправить</button>
+      </form>
+    </div>
+  </body>
+</html>
